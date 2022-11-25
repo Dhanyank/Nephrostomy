@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0;
+    font-size: larger;
+     font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-card{
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 500px;
+    background-color:aqua !important;
+    align-content: center;
+    margin-left: 500px;
+    font-size: x-large;
+    font-weight: bolder;
+    
+    
+    }
+ 
+    h1{
+        font-size: 30px;
+        font-weight:bolder;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        
+    }   
