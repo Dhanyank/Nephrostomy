@@ -1,28 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%;
+color:black;
+}
 body { margin: 0;
     font-size: larger;
      font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-mat-card{
-    height: 400px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    width: 500px;
-    background-color:aqua !important;
-    align-content: center;
-    margin-left: 500px;
-    font-size: x-large;
-    font-weight: bolder;
-    
-    
-    }
- 
-    h1{
-        font-size: 30px;
-        font-weight:bolder;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-align: center;
+    .container{
+        height: 50%;
+        align-content: center;
+        }
         
-    }   
+    
+    
+    .table{
+        margin-right: 200px;
+        height: 500px;
+        margin-top: 10px;
+        margin-bottom: 1200px;
+        width: 800px;
+        /* display: none; */
+        background-color:blanchedalmond!important;
+        border-color:blanchedalmond;
+
+    
+        }
+    
+    

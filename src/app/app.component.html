@@ -1,32 +1,93 @@
-<div class="col-md-6">
+<div >
   <mat-tab-group>
     <mat-tab label="DESCRIPTION"> </mat-tab>
     <mat-tab label="APPOINTMENT DETAILS">
-      <div>
-<h1>APPOINTMENT DETAILS</h1>
-
-        <mat-card class="apdetails">
-          <!-- <mat-card-header>
-            <mat-card-title>Appointment Details</mat-card-title>
-          </mat-card-header> -->
-          <mat-card-content>
-            <p>Appointment ID  :            {{newdata.data[0].AppointmentId}}<br><br>
-               Patient Name    :                  {{newdata.data[0].PatientName}}<br><br>
-              Patient Id :{{newdata.data[0].patientID}}<br><br>
-              Doctor Name :{{newdata.data[0].DoctorName}}<br><br>
-              Doctor Id :{{newdata.data[0].doctorID}}<br><br>
-              Illness :{{newdata.data[0].Illness}}<br><br>
-              Start Time :{{newdata.data[0].StartTime | date:'dd-MM-YY,h:mm:ss a'}}<br><br>
-              End Time :{{newdata.data[0].EndTime | date:'dd-MM-YY,h:mm:ss a'}}<br><br>
-            </p>
 
 
-          </mat-card-content>
 
-        </mat-card>
+      
+        <h3 appHighight class="text-center">APPOINTMENT DETAILS</h3>
 
+      
+      <div class="container col-md-6 mt-0">
+
+        <table class="table table-bordered">
+
+          <tbody>
+            <tr>
+
+              <td>APPOINTMENT ID</td>
+              <td>{{newdata.data[0].AppointmentId}}</td>
+
+
+
+            </tr>
+            <tr>
+
+              <td>PATIENT NAME</td>
+              <td>{{newdata.data[0].PatientName}}</td>
+
+
+            </tr>
+
+            <tr>
+
+              <td>PATIENT ID</td>
+              <td>{{newdata.data[0].patientID}}</td>
+
+
+
+            </tr>
+            <tr>
+
+              <td>DOCTOR NAME </td>
+              <td>{{newdata.data[0].DoctorName}}</td>
+
+
+
+            </tr>
+            <tr>
+
+              <td>DOCTOR ID</td>
+              <td>{{newdata.data[0].doctorID}}</td>
+
+
+
+            </tr>
+            <tr>
+
+              <td>ILLNESS</td>
+              <td>{{newdata.data[0].Illness}}</td>
+
+
+
+            </tr>
+            <tr>
+
+              <td>STSRT TIME</td>
+              <td>{{newdata.data[0].StartTime | date:'dd-MM-YY,h:mm:ss a'}}</td>
+
+
+
+            </tr>
+            <tr>
+
+
+              <td>END TIME</td>
+              <td>{{newdata.data[0].EndTime| date:'dd-MM-YY,h:mm:ss a'}}</td>
+
+
+
+            </tr>
+
+          </tbody>
+        </table>
       </div>
+      
+
     </mat-tab>
-    <mat-tab label="ECG REORT"></mat-tab>
+    <mat-tab label="ECG REPORT"></mat-tab>
+
   </mat-tab-group>
+
 </div>
