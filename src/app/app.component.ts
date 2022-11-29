@@ -8,14 +8,14 @@ import { ServiceService } from './Service/service.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  newdata:any;
-  constructor(private as:ServiceService){
+  appointmentDetails:any;
+  constructor(private apiService:ServiceService){
 
   }
   ngOnInit(){
-    this.as.getdata().subscribe(res=>{
-      this.newdata=res;
-      console.log(this.newdata);
+    this.apiService.getAppointmentDetails().subscribe(res=>{
+      this.appointmentDetails=res;
+      console.log(this.appointmentDetails);
       
     })
   }

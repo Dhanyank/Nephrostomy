@@ -9,7 +9,7 @@ export class ServiceService {
 
   constructor(private http: HttpClient) { }
 
-  getdata() {
+  getAppointmentDetails() {
     return this.http.get('https://api.steradian.ai:9999/r/appointmentid?id=637f6f4c8883171aefa27175');
   }
 
