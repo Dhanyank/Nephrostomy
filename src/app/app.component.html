@@ -1,92 +1,47 @@
-<div >
+<nav class="navbar navbar-light bg-dark ">
+  <a class="navbar-brand  " href="#" style="color:rgb(85, 98, 237);"><b>&#169; Doctor Web </b></a>
+
+</nav>
+<div>
   <mat-tab-group>
-    <mat-tab label="DESCRIPTION"> </mat-tab>
-    <mat-tab label="APPOINTMENT DETAILS">
+  
+    
+    <mat-tab label="Urine Output Measurements">
 
 
 
-      
-        <h3 appHighight class="text-center">APPOINTMENT DETAILS</h3>
+      <h3 appHighight class="text-center">Urine Output Measurements</h3>
 
-      
       <div class="container col-md-6 mt-0">
 
         <table class="table table-bordered">
-
-          <tbody>
+          
             <tr>
-
-              <td>APPOINTMENT ID</td>
-              <td>{{appointmentDetails.data[0].AppointmentId}}</td>
-
-
-
+              <th>Flow Rate L/min</th>
+              <th>Out_Quantity in ml</th>
+<th>Date & Time</th>
             </tr>
-            <tr>
+          
+          
+            <tr *ngFor="let newdata of newdata">
 
-              <td>PATIENT NAME</td>
-              <td>{{appointmentDetails.data[0].PatientName}}</td>
-
-
+              <td>{{newdata.flow_rate}}</td>
+              <td>{{newdata.out_quantity}}</td>
+              <td>{{newdata.createdAt | date:'dd-MM-YY,h:mm:ss a' }}</td>
             </tr>
 
-            <tr>
 
-              <td>PATIENT ID</td>
-              <td>{{appointmentDetails.data[0].patientID}}</td>
-
-
-
-            </tr>
-            <tr>
-
-              <td>DOCTOR NAME </td>
-              <td>{{appointmentDetails.data[0].DoctorName}}</td>
-
-
-
-            </tr>
-            <tr>
-
-              <td>DOCTOR ID</td>
-              <td>{{appointmentDetails.data[0].doctorID}}</td>
-
-
-
-            </tr>
-            <tr>
-
-              <td>ILLNESS</td>
-              <td>{{appointmentDetails.data[0].Illness}}</td>
-
-
-
-            </tr>
-            <tr>
-
-              <td>START TIME</td>
-              <td>{{appointmentDetails.data[0].StartTime | date:'dd-MM-YY,h:mm:ss a'}}</td>
-
-
-
-            </tr>
-            <tr>
-
-
-              <td>END TIME</td>
-              <td>{{appointmentDetails.data[0].EndTime| date:'dd-MM-YY,h:mm:ss a'}}</td>
-
-
-
-            </tr>
-
-          </tbody>
+          
         </table>
+
+
       </div>
-      
+
 
     </mat-tab>
-    <mat-tab label="ECG REPORT"></mat-tab>
+
+
+
 
   </mat-tab-group>
 

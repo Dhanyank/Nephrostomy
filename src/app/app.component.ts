@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ServiceService } from './Service/service.service';
-// import { ServiceService } from './Service/service.service';
 
 @Component({
   selector: 'app-root',
@@ -8,16 +7,19 @@ import { ServiceService } from './Service/service.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  appointmentDetails:any;
-  constructor(private apiService:ServiceService){
+  details: any = [];
+  newdata:any=[];
+  
+  constructor(private apiService: ServiceService) {
 
   }
-  ngOnInit(){
-    this.apiService.getAppointmentDetails().subscribe(res=>{
-      this.appointmentDetails=res;
-      console.log(this.appointmentDetails);
-      
+  ngOnInit() {
+    this.apiService.getDetails().subscribe(res=>{
+      this.details=res;
+      console.log(this.details);
+      this.newdata=this.details.data
+console.log(this.newdata)
     })
-  }
+  
 }
-
+}
