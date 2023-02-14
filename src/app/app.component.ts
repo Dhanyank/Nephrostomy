@@ -18,7 +18,9 @@ export class AppComponent {
       this.details=res;
       console.log(this.details);
       this.newdata=this.details.data
-console.log(this.newdata)
+
+
+// console.log(this.details.data[0].URINE_BAG_status)
     })
   
 }

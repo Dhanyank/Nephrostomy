@@ -1,0 +1,55 @@
+/* .container{
+    height: 100%;
+    }
+    
+    table,tr{
+        color: rgb(46, 43, 43);
+        margin-top: 30px;
+        border: 2px solid;
+        border-style: double;
+        border-color: black !important;
+
+    
+    }
+
+
+.table,col{
+    border: 2px solid;
+
+}
+
+.table,td{
+    width: 300px;
+
+}
+    .table,th{
+        color: rgb(46, 43, 43);
+        margin-top: 30px;
+        border: 2px solid;
+        border-style: double;
+        border-color: black !important;
+
+    }
+.table{
+    margin-right: 0px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    /* width: 1000px; */
+    /* display: none; */
+    /* background-color:rgb(201, 235, 245)!important; */
+    /* border-color:black !important; */
+    /* border-style:double; */
+    /* border: 2px solid; */
+
+
+
+
+    /* } */
+
+
+    /* .table-bordered td, .table-bordered th{ */
+        /* text-overflow: inherit; */
+    /* } */
+    
+ 

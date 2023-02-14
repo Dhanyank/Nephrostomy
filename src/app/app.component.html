@@ -1,5 +1,5 @@
 <nav class="navbar navbar-light bg-dark ">
-  <a class="navbar-brand  " href="#" style="color:rgb(85, 98, 237);"><b>&#169; Doctor Web </b></a>
+  <a class="navbar-brand  " href="#" style="color:rgb(12, 12, 14);"><b>&#169; Doctor Web </b></a>
 
 </nav>
 <div>
@@ -12,22 +12,55 @@
 
       <h3 appHighight class="text-center">Urine Output Measurements</h3>
 
-      <div class="container col-md-6 mt-0">
+      <div class="container">
 
         <table class="table table-bordered">
-          
+          <thead>
             <tr>
               <th>Flow Rate L/min</th>
               <th>Out_Quantity in ml</th>
-<th>Date & Time</th>
+              <th>Urine Bag Status</th>
+              <th>Turbidity</th>
+              <!-- <th >Position</th> -->
+              <th>Position</th>
+  
+              <th>Colour</th>
+               <th>Date & Time</th>
+            
+            
             </tr>
-          
-          
+
+          </thead>  
             <tr *ngFor="let newdata of newdata">
 
               <td>{{newdata.flow_rate}}</td>
               <td>{{newdata.out_quantity}}</td>
+              <td>{{newdata.URINE_BAG_status}}
+                <td>{{newdata.turbidity}}</td>
+                <td>
+                acceIX:{{newdata.accelX}}<br>
+                acceIY:{{newdata.accelY}}<br>
+                acceIZ:{{newdata.accelX}}<br>
+                gyroX:{{newdata.gyroX}}<br>
+                gyroY:{{newdata.gyroY}}<br>
+                gyroZ:{{newdata.gyroZ}}<br>
+                magX :{{newdata.magX}}<br>
+                magY :{{newdata.magY}}<br>
+                magZ :{{newdata.magZ}}
+                </td>
+
+              <td>{{newdata.colour}}</td>
+
+
+
+
+
+                
+
+
+
               <td>{{newdata.createdAt | date:'dd-MM-YY,h:mm:ss a' }}</td>
+
             </tr>
 
 

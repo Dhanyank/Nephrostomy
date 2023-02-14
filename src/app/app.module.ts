@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import{HttpClientModule} from '@angular/common/http'
 import {MatCardModule} from '@angular/material/card';
 import { NgFor } from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -22,6 +23,8 @@ import { NgFor } from '@angular/common';
     HttpClientModule,
     MatCardModule,
     NgFor,
+    MatIconModule,
+    
   
     
     
